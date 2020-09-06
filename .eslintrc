@@ -1,0 +1,111 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "jsx-a11y",
+    "react-hooks"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "array-bracket-spacing": [
+      "error",
+      "never"
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ], // Unix:'LF', Windows:'CRLF'
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "no-bitwise": "off",
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/destructuring-assignment": [
+      1,
+      "always"
+    ],
+    "react/prefer-stateless-function": [
+      "warn"
+    ],
+    "react/prop-types": "off",
+    "no-case-declarations": "off",
+    "no-debugger": "off",
+    "lines-between-class-members": [
+      "error",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
+    "no-param-reassign": [
+      2,
+      {
+        "props": false
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "object": true,
+        "array": false
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "react/jsx-filename-extension": [
+      2,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
+    // "import/no-extraneous-dependencies": [
+    //   "error",
+    //   {
+    //     "devDependencies": ["**/*.test.ts", "**/*.test.tsx"]
+    //   }
+    // ],
+    // "@typescript-eslint/indent": [2, 2],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off"
+  }
+}
